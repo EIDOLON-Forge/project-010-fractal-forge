@@ -1,9 +1,68 @@
-.venv/
+# ============================================================
+# EIDOLON #010 — Fractal Forge
+# Git Ignore
+# ============================================================
+
+# Python bytecode
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checking / linters
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pygame / application-generated files
 *.log
+
+# Generated screenshots
+screenshots/
 *.png
 *.jpg
 *.jpeg
-*.bmp
+
+# Generated audio
+*.wav
+*.mp3
+*.ogg
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Local configuration
+.env
+.env.*
+!.env.example
